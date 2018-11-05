@@ -27,3 +27,15 @@ var word_def = words[randomizer][1];
 // (remaingLetters = size) in the beginning
 var size = guessingWord_arr.length;
 var remainingLetters = size;
+
+//Get elements for user sign up and log in
+const txtEmail = document.getElementById('txtEmail');
+const txtPassword = document.getElementById('txtPS');
+const userName = document.getElementById("userName");
+const btnLogin = document.getElementById("btnLogin");
+const btnSignup = document.getElementById('btnSignup')
+const btnLogout = document.getElementById("btnLogout");
+const ranking = document.getElementById("ranking");
+emsg = document.getElementById("emsg");
+pmsg = document.getElementById("plsLogin");
+// var userScore;

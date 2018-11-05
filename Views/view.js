@@ -16,17 +16,6 @@ player_score.appendChild(score_string);
 document.getElementById("score_header").appendChild(player_score);
 document.getElementById("score").innerHTML = score;
 
-// Create login button
-var login_link = document.createElement('a');
-var login_string = document.createTextNode("Login / Register");
-login_link.appendChild(login_string);
-login_link.title = "Login / Register";
-login_link.href = "http://www.google.ca";
-document.getElementById("login").appendChild(login_link);
-document.getElementById("login").style.textAlign = "right";
-document.getElementById("login").style.padding = "5px";
-document.getElementById("login").style.paddingTop = "15px";
-
 // Create and print definition
 var word_definition = document.createElement("p");
 // word_def in model.js
