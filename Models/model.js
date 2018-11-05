@@ -12,7 +12,7 @@ var words = [
 ]
 
 var lives = 7;
-var score = 0;
+var initial_score = 0;
 
 var randomizer = Math.floor(Math.random() * words.length);
 
@@ -36,6 +36,3 @@ const btnLogin = document.getElementById("btnLogin");
 const btnSignup = document.getElementById('btnSignup')
 const btnLogout = document.getElementById("btnLogout");
 const ranking = document.getElementById("ranking");
-emsg = document.getElementById("emsg");
-pmsg = document.getElementById("plsLogin");
-// var userScore;

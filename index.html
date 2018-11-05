@@ -30,9 +30,57 @@
 </head>
 
 <body>
-    <h1>Leader Board</h1>
+    <div class="container">
 
-    <div id="rankingBoard"></div>
+        <div class="title">
+            <div class="col-12">
+                <img id="banner" src="images/HangmanBanner.png" alt="Hangman Banner">
+            </div>
+        </div>
+
+        <div class="login-panel">
+            <input id="txtEmail" type="email" placeholder="Email">
+            <input id="txtPS" type="password" placeholder="Password">
+            <input id="userName" type="text" placeholder="User Name">
+
+            <p id="emsg"></p>
+
+            <button id="btnLogin" class="btn btn-primary">Log in</button>
+            <button id="btnSignup" class="btn btn-info">Sign up</button>
+            <button id="btnLogout" class="btn btn-primary hide">Log out</button>
+            <button id="ranking" class="btn btn-info hide" onclick="document.location.href='ranking.html';">Ranking
+                Board</button>
+        </div>
+
+        <div id="GameBoard">
+            <div class="scoreboard">
+                <div class="text-center" id="score_header">
+                </div>
+                <div class="text-center" id="score">
+                </div>
+            </div>
+
+            <div class="livescount">
+                <div class="text-center" id="lives_header">
+                </div>
+                <div class="text-center" id="lives">
+                </div>
+            </div>
+
+            <div class="text-center" id="letter_line">
+            </div>
+
+            <div class="text-center" id="definition">
+            </div>
+
+            <div class="text-center" id="keyboard">
+            </div>
+            <br>
+
+            <div class="text-center" id="reset">
+            </div>
+        </div>
+    </div>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -43,7 +91,9 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
         crossorigin="anonymous"></script>
 
-    <script src="Models/ranking.js"></script>
+    <script src="Models/model.js"></script>
+    <script src="Views/view.js"></script>
+    <script src="Controllers/controller.js"></script>
 </body>
 
 </html>

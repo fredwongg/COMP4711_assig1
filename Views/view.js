@@ -14,7 +14,7 @@ var player_score = document.createElement("p");
 var score_string = document.createTextNode("Scores: ");
 player_score.appendChild(score_string);
 document.getElementById("score_header").appendChild(player_score);
-document.getElementById("score").innerHTML = score;
+document.getElementById("score").innerHTML = initial_score;
 
 // Create and print definition
 var word_definition = document.createElement("p");
@@ -51,7 +51,7 @@ for (var i=0; i<=25; i++){
 var btn_reset = document.createElement("button");
 var btn_reset_text = document.createTextNode("Next");
 btn_reset.appendChild(btn_reset_text);
-btn_reset.onclick = function() {load();};
+btn_reset.onclick = function() {reset();};
 // "btn btn-warning" from bootstrap library
 btn_reset.className = "btn btn-warning"
 btn_reset.style.width = '100px';
